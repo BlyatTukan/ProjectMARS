@@ -8,3 +8,16 @@ body{
   width: auto;
   height: auto;
 }
+.Header{
+  background: #111111;
+  text-align: center;
+}
+.Header h1{
+  color: #ddd;
+}
+.Header p{
+  color: #ddd;
+}
+.Header a{
+  color: #ffffff;
+}
