@@ -11,6 +11,8 @@ body{
 .Header{
   background: #111111;
   text-align: center;
+  padding: 200px;
+  position: relative;
 }
 .Header h1{
   color: #ddd;
@@ -18,6 +20,35 @@ body{
 .Header p{
   color: #eee;
 }
-.Header a{
-  color: #ffffff;
+.Header button{
+  border-radius: 20px;
+  background-image: linear-gradient(#F6AF14,#E98047),radial-gradient(circle at top,#F6AF14,#E98047);
+  padding: 8px 22px;
+  top: 65%;
+  border: none;
+  margin: 10px;
 }
+.Header button a{
+  text-decoration: none;
+  color: #fff;
+}
+.Social button {
+  background-color: DodgerBlue; /* Blue background */
+  border-radius: 100%;
+  border: none;
+  color: white; /* White text */
+  font-size: 0px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  min-width: 50px;
+  min-height: 50px;
+}
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+/*		<a href="https://drive.google.com/uc?export=download&id=1qEwxYIXNKAYCf7dLm0vdJYYYXvr7ZDhy" class="Download">DOWNLOAD</a>
+      <button class="btn"><i class="fas fa-discord"></i></button>
+			<button class="btn"><i class="fab fa-youtube"></i></button>
+			<button class="btn"><i class="fab fa-facebook-f"></i></button>
+			<button class="btn"><i class="fab fa-twitter"></i></button>
+*/
