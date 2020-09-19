@@ -88,17 +88,17 @@ font-family: 'Bai Jamjuree', sans-serif;
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #f77062;
+  background-image: linear-gradient(to top, #E98047 0%, #F6AF14 100%);
   color: #fff;
 }
 
 .button:hover{
-  background: #48fbca;
+  background-image: linear-gradient(to top, #4facfe 0%, #00f2fe 100%);
   transition: all 0.3s ease;
 }
 
 .navbar_links:hover{
-  background: #f77062;
+  background: #303030;
   transition: all 0.3s ease;
 }
 
@@ -221,7 +221,7 @@ transform: translateY(-8px) rotate(-45deg);
 .main_content h2{
   font-size:  3.5rem;
   background-color: #ff8177;
-  background-image: linear-gradient(to top, #045DE9 0%, #09C6F9 100%);
+  background-image: linear-gradient(to top, #4facfe 0%, #00f2fe 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -231,7 +231,7 @@ transform: translateY(-8px) rotate(-45deg);
 .main_content p{
   margin-top: 1rem;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -261,7 +261,7 @@ transform: translateY(-8px) rotate(-45deg);
   left: 0;
   width: 0;
   height: 100%;
-  background: #4837ff;
+  background-image: linear-gradient(to top, #4facfe 0%, #00f2fe 100%);
   transition: all 0.35s;
   border-radius: 4px;
 }
@@ -281,7 +281,7 @@ transform: translateY(-8px) rotate(-45deg);
 
 /* Mobile Responsive*/
 
-@media  screen and (max-width:768px) {
+@media  screen and (max-width: 768px) {
   .main_container{
     display: grid;
     grid-template-columns: auto;
@@ -307,7 +307,7 @@ transform: translateY(-8px) rotate(-45deg);
     font-size: 1.5rem;
   }
 }
-@media  screen and (max-width:480px) {
+@media  screen and (max-width: 480px) {
   .main_content h1{
     font-size: 2rem;
     margin-top: 3rem;
@@ -330,7 +330,7 @@ transform: translateY(-8px) rotate(-45deg);
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
 }
 
 .services h1{
@@ -338,7 +338,7 @@ transform: translateY(-8px) rotate(-45deg);
   background-image: linear-gradient(to right, #E98047 0%, #F6AF14 100%);
   background-size: 100%;
   margin-bottom: 5rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -365,6 +365,10 @@ transform: translateY(-8px) rotate(-45deg);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(17, 17, 17, 0.6) 100%),
   url("images/pic4.jpg");
 }
+.services_card:nth-child(3){
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(17, 17, 17, 0.6) 100%),
+  url("images/pic2.jpg");
+}
 
 .services_card h2{
   position: absolute;
@@ -373,7 +377,7 @@ transform: translateY(-8px) rotate(-45deg);
 }
 .services_card p{
   position: absolute;
-  top: 400px;
+  top: 387.5px;
   left: 30px;
 }
 .services_card button{
@@ -391,27 +395,34 @@ background-image: linear-gradient(to top, #E98047 0%, #F6AF14 100%);
 }
 .services_card:hover{
   transform: scale(1.075);
-  transition: 0.2s ease-in;
-  cursor: pointer;
+  transition: 0.3s ease;
 }
-
+.services_card button a{
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 1310px){
+  .services{
+    height: 1200px;
+  }
+}
 @media screen and (max-width: 960px){
   .services{
-    height: 1600px;
+    height: 2000px;
   }
 
   .services h1{
-    font-size: 2rem;
+    font-size: 2.6rem;
     margin-top: 12rem;
   }
 }
 @media screen and (max-width: 480px){
   .services{
-    height: 1400px;
+    height: 1900px;
   }
 
   .services h1{
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .services_card {
@@ -424,7 +435,7 @@ background-image: linear-gradient(to top, #E98047 0%, #F6AF14 100%);
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
-  justiny-content: center;
+  justify-content: center;
   align-items: center;
 }
 #footer_logo{
@@ -440,7 +451,7 @@ background-image: linear-gradient(to top, #E98047 0%, #F6AF14 100%);
   width: 100%;
   max-width: 1000px;
   display: flex;
-  justiny-content: center;
+  justify-content: center;
 }
 
 .footer_link_wrapper{
@@ -453,7 +464,7 @@ background-image: linear-gradient(to top, #E98047 0%, #F6AF14 100%);
   align-items: flex-flex-start;
   margin: 16px;
   text-align: left;
-  width: 160px;
+  width: 175px;
   box-sizing: border-box;
 }
 
@@ -467,6 +478,12 @@ background-image: linear-gradient(to top, #E98047 0%, #F6AF14 100%);
 
 .footer_link_items a {
   color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer_link_items p {
+  color: #FFF;
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
