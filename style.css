@@ -558,3 +558,60 @@ background-image: linear-gradient(to top, #E98047 0%, #F6AF14 100%);
     width: 100%;
   }
 }
+
+/* Page404 */
+
+.Page404{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.Page404 h1{
+  font-size: 160px;
+  margin: 0;
+  font-style: 800;
+  background-image: linear-gradient(to top, #E98047 0%, #F6AF14 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.Page404 button{
+  font-size: 1rem;
+  background-image: linear-gradient(to top, #E98047 0%, #F6AF14 100%);
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+.Page404 a{
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+.Page404:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-image: linear-gradient(to top, #4facfe 0%, #00f2fe 100%);
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.BodyPage404{
+  background: #141414;
+}
