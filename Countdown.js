@@ -1,4 +1,4 @@
-let launchDate = new Date("Sep 23, 2020 00:00:00").getTime();
+let launchDate = new Date("Jan 1, 2021 00:00:00").getTime();
 let timer = setInterval(tick, 1000);
 
 function tick () {

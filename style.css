@@ -632,17 +632,20 @@ background-image: linear-gradient(to top, #E98047 0%, #F6AF14 100%);
   border-radius: 4px;
 }
 
-.BodyPage404{
+.BodyBackground{
   background: #141414;
 }
 
 /* Page404 */
 
 .Countdown_container{
-  background: #141414;
-  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center;
-  padding: 5rem 0;
+  color: #fff;
+  background: #141414;
 }
 
 .Countdown_container h1{
