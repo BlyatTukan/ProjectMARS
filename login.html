@@ -8,16 +8,43 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;400;700&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 </head>
 
 <body class="BodyBackground">
-  <div class="Page404">
-		<h3>UH OH!</h3>
-		<h2>PAGE NOT FOUND</h2>
-		<h1>404</h1>
-		<p>THE PAGE YOU REQUESTED COULD NOT BE FOUND</p>
-		<button><a href="index.html">Go back home</a></button>
-	</div>
+	<img class="wave" src="Images/Login_Wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="Images/Login_Background.svg">
+		</div>
+		<div class="login-content">
+			<form action="index.html">
+				<img src="Images/Login_Avatar.svg">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i">
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input">
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
+    <script src="login_anim.js"></script>
 </body>
 
 </html>
